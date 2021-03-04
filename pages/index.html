@@ -6,57 +6,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="author" content="USPCodeLab Sanca"/>
         <meta name="description" content="Página de filtragem de matérias da USP. Projeto do on.boarding do Front 2."/>
-        <title>Pagina de matérias USP</title>
-        <link rel="stylesheet" href="../styles/style.css"/>
+        <title>Matérias USP</title>
+        <link rel="stylesheet" href="../styles/index.css"/>
         <link rel="shortcut icon" href="https://uspdigital.usp.br/comumwebdev/imagens/favicon.ico" type="image/x-icon"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
-    <body>  
+
+    <body>
         <header>
-            <img src="../assets/logo_usp_branco.png" class="logo">
-            <a href="https://google.com.br" class="first-b">Início</a>
-            <a href="https://google.com.br" class="second-b">Matérias</a>    
-            <a href="https://google.com.br" class="third-b">Sobre</a>        
+            <a href="index.html"><img id="logo" src="../assets/logo_usp_branco.png" alt="Logo da USP"/></a>
+            <nav>
+                <a href="https://google.com.br">Início</a>
+                <a href="https://google.com.br">Matérias</a>    
+                <a href="https://google.com.br">Sobre</a>  
+            </nav>     
         </header>
 
         <main>
-            <div class="h1-container">
-                <h1>Preencha corretamente as informações para prosseguir com a visualização</h1>
-            </div>
-            <div class="main-div">
-                <div class="option-container">
-                    <p>Filtrar por:</p>
-                    <select>
-                        <option>Selecione</option>
-                        <option>Créditos aula</option>
-                        <option>Créditos trabalho</option>
-                        <option>Carga horária total</option>
-                        <option>Tipo</option>
-                    </select>
+            <section>
+                <div class="title">
+                    <span>Preencha corretamente as informações para prosseguir com a visualização</span>
                 </div>
-                <div class="option-container">
-                    <p>Ordenação:</p>
-                    <select>
-                        <option>Selecione</option>
-                        <option>Opção 1</option>
-                        <option>Opção 2</option>
-                        <option>Opção 3</option>
-                    </select>
-                </div>
-                <div class="option-container">
-                    <p>Pesquisa:</p>
-                    <input>
+                <div class="row">
+                    <div class="option-container">
+                        <p class="option-name">Filtrar por:</p>
+                        <select>
+                            <option>Selecione</option>
+                            <option>Créditos aula</option>
+                            <option>Créditos trabalho</option>
+                            <option>Carga horária total</option>
+                            <option>Tipo</option>
+                        </select>
+                    </div>
+                    <div class="option-container">
+                        <p class="option-name">Ordenação:</p>
+                        <select>
+                            <option>Selecione</option>
+                            <option>Opção 1</option>
+                            <option>Opção 2</option>
+                            <option>Opção 3</option>
+                        </select>
+                    </div>
+                    <div class="option-container">
+                        <p class="option-name">Pesquisa:</p>
+                        <input>
+                    </div>
                 </div>
                 <div class="materias-div">
-                    <p>Matérias:</p>
+                    <p class="option-name">Matérias:</p>
                     <div class="output-div" id="container-materias">
                     </div>
                 </div>
 
-            </div>
-            <img src="../assets/foto_usp.png" loading="lazy">
+            </section>
         </main>
-        <script src="back.js">
-            
-        </script>
+
+        <footer>
+            <img src="../assets/codelab.svg" alt="Logo da USPCodeLab Sanca"/>
+        </footer>
+
+        <script src="../scripts/back.js"></script>
     </body>
 </html>
