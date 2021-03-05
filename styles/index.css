@@ -71,6 +71,7 @@ nav a {
 nav a:hover {
     background: rgba(255, 255, 255, 0.897);
     color: rgb(126, 126, 126);
+    border-radius: 8px;
 }
 
 select {
@@ -139,6 +140,7 @@ input {
     border-bottom: #AFAFAF solid 0.8px;
     overflow-y: auto;
 }
+
 #marcacao-materia:hover {
     background-color: #CECECE;
 }
@@ -172,4 +174,8 @@ footer a img {
 #codelab, #github{
     display: flex;
     flex-direction: row;
+}
+
+.info{
+    font-weight: bold;
 }
