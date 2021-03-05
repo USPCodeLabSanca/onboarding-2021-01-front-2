@@ -35,6 +35,10 @@ nav a:hover {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
