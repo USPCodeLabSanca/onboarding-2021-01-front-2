@@ -1,6 +1,6 @@
 html {
     font-family: Roboto;
-    overflow: none;
+    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
     padding: 0px;
@@ -8,7 +8,8 @@ html {
 
 body {
     margin: 0px;
-    height: 100%;
+    height: fit-content;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -18,6 +19,7 @@ body {
 }
 
 header {
+    max-height: 100px;
     background-color: #00000026;
     display: flex;
     flex-flow: row nowrap;
@@ -35,14 +37,22 @@ main{
 footer {
     display: flex;
     flex-flow: row nowrap;
-    background-color: #00000026;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem auto;
+    background-color: #00000087;
+    color: white;
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+    color: rgb(11, 248, 209);
 }
 
 section{
-    size: fit-content;
-    min-width: 60%;
-    min-height: 40%;
-    padding: 40px 60px;
+    size: 80%;
+    padding: 5%;
     border-radius: 20px;
     background-color: rgb(247, 247, 247);
     display: flex;
@@ -64,25 +74,40 @@ nav a:hover {
 }
 
 select {
+    height: 30px;
     border-radius: 8px;
     font-size: 20px;
-    margin: 20px;
+    border: none;
+    background-color: #e9e9e9;
+}
+option {
+    font-size: smaller;
+}
+
+input {
+    height: 30px;
+    width: 40vw;
+    border: none;
+    border-radius: 20px;
+    background-color: #e9e9e9;
 }
 
 .row {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
 }
 
-
-
 .title {
     width: 100%;
-    font-size: 28px;
+    font-size: 2vw;
     font-weight: 500;
     margin-bottom: 2rem;
     align-items: center;
+}
+
+.option-container {
+    margin: 15px;
 }
 
 .option-name{
@@ -90,46 +115,32 @@ select {
     font-size: 20px;
 }
 
-section input {
-    width: 530px;
-    margin-left: 20px;
-    border-radius: 8px;
-}
-
 .materias-div{
-    width: 95%;
+    width: 100%;
 }
 
 .output-div{
     width: 100%;
-    max-height: 400px;
-    overflow: auto;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: white;
-    border-color: rgb(175, 175, 175);
-    border-radius: 12px;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 25px;
-    margin-left: 20px;
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
 }
 
-.output-div p{
-    font-weight: normal;
-}
-
-.output-div .info{
-    font-weight: Bold;
-}
-
-.output-div .marcacao-materia{
+.marcacao-materia {
     width: 100%;
-    border-color: rgb(175, 175, 175);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-    box-sizing: border-box;
+    min-height: 20px;
+    height: fit-content;
+    max-height: 150px;
+    background-color: #fff;
+    transition: 0.5s;
+    margin: 0px;
+    padding: 15px;
+    border-bottom: #AFAFAF solid 0.8px;
+    overflow-y: auto;
+}
+.marcacao-materia:hover {
+    background-color: #CECECE;
 }
 
 .output-div button {
@@ -140,4 +151,25 @@ section input {
 #logo{
     width: 9rem;
     margin: 0em 2em;
+}
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer a img {
+    width: 4rem;
+}
+
+#github{
+    align-items: center;
+}
+
+#github img {
+    margin: 1em;
+}
+
+#codelab, #github{
+    display: flex;
+    flex-direction: row;
 }
