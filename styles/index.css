@@ -1,11 +1,3 @@
-html {
-    font-family: Roboto;
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    padding: 0px;
-}
-
 body {
     margin: 0px;
     height: fit-content;
@@ -18,36 +10,12 @@ body {
     background-repeat: no-repeat;
 }
 
-header {
-    max-height: 100px;
-    background-color: #00000026;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
 main{
     height: 100%;
     display: flex;
     padding: 2em 16em;
     flex-direction: column;
     align-items: center;
-}
-
-footer {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem auto;
-    background-color: #00000087;
-    color: white;
-    text-decoration: none;
-}
-
-footer a {
-    color: white;
-    color: rgb(11, 248, 209);
 }
 
 section{
@@ -58,20 +26,6 @@ section{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-nav a {
-    font-weight: 400;
-    padding: 0.5em 1em;
-    margin: 0.5em;
-    color: white;
-    font-size: 2em;
-    text-decoration: none;
-}
-nav a:hover {
-    background: rgba(255, 255, 255, 0.897);
-    color: rgb(126, 126, 126);
-    border-radius: 8px;
 }
 
 select {
@@ -148,32 +102,6 @@ input {
 .output-div button {
     width: 100px;
     margin-left: 20px;
-}
-
-#logo{
-    width: 9rem;
-    margin: 0em 2em;
-}
-
-footer h2 {
-    font-weight: 400;
-}
-
-footer a img {
-    width: 4rem;
-}
-
-#github{
-    align-items: center;
-}
-
-#github img {
-    margin: 1em;
-}
-
-#codelab, #github{
-    display: flex;
-    flex-direction: row;
 }
 
 .info{
