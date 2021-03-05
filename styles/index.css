@@ -127,7 +127,7 @@ input {
     border-radius: 20px;
 }
 
-.marcacao-materia {
+#marcacao-materia {
     width: 100%;
     min-height: 20px;
     height: fit-content;
@@ -139,7 +139,7 @@ input {
     border-bottom: #AFAFAF solid 0.8px;
     overflow-y: auto;
 }
-.marcacao-materia:hover {
+#marcacao-materia:hover {
     background-color: #CECECE;
 }
 

@@ -40,7 +40,7 @@ let mainContainer = document.getElementById('container-materias');
 //Função que cria uma div e coloca as informações dentro dessa div de uma determinada matéria
 function criarContainerDeUmaMateria(materia){
     let containerMateria = document.createElement('div');
-    containerMateria.classList.add("marcacao-materia");
+    containerMateria.setAttribute("id", "marcacao-materia");
     containerMateria.innerHTML=`
         <p class="info">${materia.nome_pt_br}</p>
     `;
@@ -60,21 +60,21 @@ function renderizarElementoDeMateria (containerMateria) {
 //apenas a matéria clicada e renderizar suas informações. Após isso ele vai adicionar mais
 //um event listener ao botão para limpar todas as informações e renderizar o menu de matérias.
 function renderizarMaterias (materias){
-     for(let i = 0; i < materias.length; i++){
-         let materia = materias[i];
-         let containerMateria = criarContainerDeUmaMateria(materia);
-         containerMateria.addEventListener(`click`, function () {
-             limparMaterias();
-             renderizarElementoDeMateria(containerMateria);
-             renderizaInformacoesMateria(materia);
-             let botaoVoltar = document.getElementById('botao-voltar');
-             botaoVoltar.addEventListener('click', function (){
+    for(let i = 0; i < materias.length; i++){
+        let materia = materias[i];
+        let containerMateria = criarContainerDeUmaMateria(materia);
+        containerMateria.addEventListener(`click`, function () {
+            limparMaterias();
+            renderizarElementoDeMateria(containerMateria);
+            renderizaInformacoesMateria(materia);
+            let materiaMark = document.getElementById('marcacao-materia');
+            materiaMark.addEventListener('click', function (){
                 limparMaterias();
                 renderizarMaterias(materias);
             });
-         });
-         renderizarElementoDeMateria(containerMateria);
-     }
+        });
+        renderizarElementoDeMateria(containerMateria);
+    }
  }
 
 //Chamada da função que renderiza as matérias
@@ -88,7 +88,7 @@ function limparMaterias(){
 //Função que cria uma div e coloca as informações dentro dessa div de uma determinada matéria
 function informacoesDaMateria(materia){
     let containerMateria = document.createElement('div');
-    containerMateria.classList.add("marcacao-materia");
+    containerMateria.setAttribute("id", "marcacao-materia");
     containerMateria.innerHTML = `
         <p class="info">Código:</p>
         <p>${materia.codigo}</p>
@@ -105,7 +105,6 @@ function informacoesDaMateria(materia){
         <p>${materia.tipo}</p>
         <p class="info">Descrição</p>
         <p>${materia.objetivos}</p>
-        <button id="botao-voltar">Voltar</button>
     `;
 
     return containerMateria;
