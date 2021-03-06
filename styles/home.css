@@ -16,11 +16,16 @@ h5 {
 }
 
 main {
+    height: 40vh;
+    min-height: fit-content;
     margin-top: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .codelab{
-    margin-left: 28%;
-    width: 40vw;
+    margin-left: 33%;
+    width: 30%;
 }
