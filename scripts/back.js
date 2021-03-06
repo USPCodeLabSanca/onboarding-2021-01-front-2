@@ -31,7 +31,66 @@ let materias = [
         carga_horaria_total: 80,
         tipo: 'semestral',
         objetivos: 'Aprofundar conceitos de geometria analítica',
-    }
+    },
+    {
+        codigo: 'SCC0200',
+        nome_pt_br: "Informação Profissional e Tutoria Acadêmica em Ciências da Computação",
+        nome_en_us: "Professional Information and Mentoring on Computer Science",
+        creditos_aula: 2,
+        creditos_trabalho: 0,
+        carga_horaria_total: 30,
+        tipo: 'semestral',
+        objetivos: `Ambientar o estudante com o curso de Bacharelado em Ciências da Computação, proporcionando uma visão global dos conteúdos do currículo e das várias áreas da Computação. Familiarizar o estudante com a rotina acadêmica, introduzindo e discutindo as diversas questões relacionadas, visando acompanhar o rendimento dos alunos, orientá-los sobre o andamento do curso e prover orientação sobre atividades complementares e sobre a carreira em computação, aumentando o aproveitamento dos alunos e diminuindo evasão e retenção no curso.
+
+        To familiarize the student with the field of Computer Science, providing a broad picture on the course structure as a whole and the several areas of Computer Science. To introduce the student to the academic routine, presenting and discussing the related issues, aiming at supervising the students' performance, advising them during the progress of the course, and providing guidance on complementary activities and the career in the computing area, increasing student achievement and reducing dropout and retention in the course.`, 
+    },
+    {
+        codigo: 'SCC0222',
+        nome_pt_br: "Laboratório de Introdução a Ciência de Computação I",
+        nome_en_us: "Introdution to Computer Science: Laboratory Practice I",
+        creditos_aula: 2,
+        creditos_trabalho: 2,
+        carga_horaria_total: 90,
+        tipo: 'semestral',
+        objetivos: `Implementar em laboratório as técnicas de programação apresentadas em Introdução à Ciência da Computação I, utilizando uma linguagem de programação estruturada.
+
+        Use a structured programming language to create programs based on the programming techniques presented in the course Introduction to Computer Science I.`
+    },
+    {
+        codigo: 'SCC0104',
+        nome_pt_br: "Evolução Histórica da Computação e Aplicações",
+        nome_en_us: "Computing History, Evolution and Applications",
+        creditos_aula: 2,
+        creditos_trabalho: 0,
+        carga_horaria_total: 30,
+        tipo: 'semestral',
+        objetivos: `Apresentar ao aluno um panorama da evolução da computação, identificando marcos históricos, personagens relevantes e suas contribuições. Motivar o aluno ingressante por meio da apresentação de desenvolvimentos e aplicações importantes da computação em diferentes áreas, relacionando-os aos fundamentos matemáticos a serem estudados ao longo do curso.
+
+        Introduce the student to an overview of computer science evolution, identifying landmarks, relevant characters and their contribution. Motivate the new students by the exposition of important developments and applications of computer sciences in different areas, linking them to mathematical concepts to be learned later in the course.
+        `
+    },
+    {
+        codigo: 'SCC0109',
+        nome_pt_br: "Prática em Lógica Digital",
+        nome_en_us: "Introduction to Digital Logic: Laboratory Practice",
+        creditos_aula: 2,
+        creditos_trabalho: 1,
+        carga_horaria_total: 60,
+        tipo: 'semestral',
+        objetivos: `Introduzir o aluno na prática de conceitos básicos de eletrônica e lógica digital, e técnicas de projeto de subsistemas digitais com ênfase em circuitos combinacionais.`
+    },
+    {
+        codigo: 'SCC0117',
+        nome_pt_br: "Introdução a Lógica Digital",
+        nome_en_us: "Introduction to Digital Logic",
+        creditos_aula: 2,
+        creditos_trabalho: 1,
+        carga_horaria_total: 60,
+        tipo: 'semestral',
+        objetivos: `Introduzir ao aluno conceitos básicos de eletrônica elógica Digital, técnicas de projeto de subsistemas digitais com ênfase em circuitos combinacionais.
+
+        Introduction of basic concepts of electronics and digital logic, techniques of design of digital subsystems emphasizing combinatorial circuits.`
+    },
 ];
 
 //Variável que seleciona a div que irá mostrar as matérias

@@ -70,3 +70,11 @@ footer a img {
     display: flex;
     flex-direction: row;
 }
+
+#footer-home{
+    margin-top: 200px;
+}
+
+#footer-index{
+    margin-top: 300px;
+}
