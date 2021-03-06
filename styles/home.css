@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(190, 250, 235);
+}
+
+h1 {
+    margin: 0;
+    font-size: 100px;
+    color: rgb(37, 196, 167);
+}
+
+h5 {
+    font-size: 35px;
+    margin: 0;
+    color: rgb(37, 196, 167);
+}
+
+main {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.codelab{
+    margin-left: 37%;
+}
