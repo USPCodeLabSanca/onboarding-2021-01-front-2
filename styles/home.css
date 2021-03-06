@@ -1,5 +1,6 @@
 body{
     background-color: rgb(190, 250, 235);
+    height: 100%;
 }
 
 h1 {
@@ -20,5 +21,6 @@ main {
 }
 
 .codelab{
-    margin-left: 37%;
+    margin-left: 28%;
+    width: 40vw;
 }

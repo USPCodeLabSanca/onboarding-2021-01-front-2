@@ -1,9 +1,4 @@
 body {
-    margin: 0px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     background-image: url("../assets/foto_usp.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,8 +13,6 @@ main{
 }
 
 footer {
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
 

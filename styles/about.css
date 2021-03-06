@@ -1,14 +1,8 @@
 body {
-    margin: 0px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
     background-color: rgb(190, 250, 235);
 }
 
 main {
-    position: relative;
     height: 100%;
     display: flex;
     padding: 2em 4em;
