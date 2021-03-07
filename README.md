@@ -14,11 +14,9 @@
     <li>CSS</li>
     <li>JavaScript</li>
 </ul>
-<hr/>
 
 <h2>Agradecimentos</h2>
 <p>Gostaríamos de agradecer a toda organização do CodeLab por nos proporcionar um evento com tanto aprendizado e tão enriquecedor. Tenho certeza que todos nós sairemos muitos melhores em WebDev do que quando entramos. Queremos também homenagear os nossos mentores pela ajuda e pela paciência ao longo do projeto.</p>
-<hr/>
 
 <h2>Membros</h2>
 <ul>
